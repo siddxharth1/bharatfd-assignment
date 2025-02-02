@@ -3,6 +3,7 @@ const { Translate } = v2;
 import { redis, CACHE_EXPIRY } from '../config/redis.config';
 import { SUPPORTED_LANGUAGES } from '../config/language.config';
 import { SupportedLanguage } from '../types/language.types';
+import "dotenv/config";
 
 const translate = new Translate({
   key: process.env.GOOGLE_TRANSLATE_API_KEY,
